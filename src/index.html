@@ -8,20 +8,78 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="/src/styles/main.scss">
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="https://via.placeholder.com/200x200" alt="image">
             <p class="hero__text">
-                O maior evento de Berseck do Brasil inicia em: 10d 12h 20m 6s
+                O maior evento de Berserk do Brasil inicia em <br><span id="contador"></span>
             </p>
+
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Multe Center SEBRAE - São Luís, MA
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 69,90
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2023 ás 00:00
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Adquira seu Cupon
+                </a>
+
+            </div>
         </div>
     </header>
 
+    <section class="event event--zero">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Café com Berserk</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo harum optio dignissimos error ex omnis alias, aspernatur doloremque enim eveniet sit sint libero eligendi animi voluptate minima. Deleniti, laborum soluta?<br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem eius quisquam hic consectetur earum nam incidunt, amet soluta corrupti quia est labore commodi voluptas reiciendis alias necessitatibus, laboriosam quaerat reprehenderit?
+                </p>
+            </div>
+            <img class="event__image" src="https://via.placeholder.com/300x300" alt="">
+        </div>
+    </section>
+    <section class="event event--one event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Figth in GAME</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo harum optio dignissimos error ex omnis alias, aspernatur doloremque enim eveniet sit sint libero eligendi animi voluptate minima. Deleniti, laborum soluta?<br>
+                </p>
+            </div>
+            <img class="event__image" src="https://via.placeholder.com/300x300" alt="">
+        </div>
+    </section>
+    <section class="event event--two">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Combate com Espadas</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo harum optio dignissimos error ex omnis alias, aspernatur doloremque enim eveniet sit sint libero eligendi animi voluptate minima. Deleniti, laborum soluta?<br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem eius quisquam hic consectetur earum nam incidunt, amet soluta corrupti quia est labore commodi voluptas reiciendis alias necessitatibus, laboriosam quaerat reprehenderit?
+                </p>
+            </div>
+            <img class="event__image" src="https://via.placeholder.com/300x300" alt="">
+        </div>
+    </section>
 
-    <script src="scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/src/scripts/main.js"></script>
 </body>
 </html>
